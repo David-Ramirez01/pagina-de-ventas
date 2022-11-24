@@ -1,6 +1,7 @@
 let url = "https://fakestoreapi.com/products";
 const productos = document.getElementById('productos');
 const frag = document.createDocumentFragment();
+let carrito = {};
 
 $.get(url , function(respuesta){
     const data = respuesta;
